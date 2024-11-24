@@ -1,0 +1,83 @@
+:root {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.header {
+    display: flex;                 /* Flex-контейнер для выстраивания лого и кнопок в ряд */
+    align-items: center;           /* Выравнивание по центру по вертикали */
+    justify-content: space-between;/* Пространство между логотипом и кнопками */
+    padding: 10px 20px;            /* Внутренние отступы */
+    background-color: #f8f9fa;     /* Цвет фона для примера */
+}
+
+.logo {
+    height: 40px;                  /* Высота логотипа */
+    width: auto;                   /* Автоматическая ширина */
+}
+
+.button-row {
+    display: flex;                 /* Flex-контейнер для кнопок */
+    gap: 10px;                     /* Расстояние между кнопками */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: none;
+    color: white;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.about {
+    font-size: 15px;
+    margin-left: 5%;
+    margin-top: 15pt;
+}
+
+.card-container {
+    display: flex;                 /* Flex-контейнер для выстраивания карточек в ряд */
+    gap: 20px;                     /* Расстояние между карточками */
+    flex-wrap: wrap;               /* Позволяет переносить карточки на новую строку */
+    justify-content: center;       /* Центрирует карточки по горизонтали */
+    margin-top: 20px;  
+    margin-left: 5%;
+    font-family: "IBM Plex Sans", serif;
+
+}
+
+.card {
+    background-color: #e0e0e0;     /* Цвет фона карточки */
+    padding: 20px;                 /* Внутренний отступ для содержимого карточки */
+    border-radius: 14px;         /* Скругление углов */
+    width: 300px;                  /* Фиксированная ширина карточки */
+    text-align: center;            /* Центровка текста */
+}
+
+.cardPic{
+background-color:#ffffff;
+border-radius: 10px;
+height: max-content;
+padding: 10%;
+}
+
+.cardName {
+    padding-top: 10%;
+    text-align: left;
+    padding-bottom: 15%;
+}
+
+/* Адаптивное правило для перехода карточек в колонку на узких экранах */
+@media (max-width: 600px) {
+    .card-container {
+        flex-direction: column;     /* Располагает карточки в колонку */
+        align-items: center;        /* Центрирует карточки по горизонтали */
+    }
+};
