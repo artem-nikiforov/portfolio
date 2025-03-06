@@ -1,57 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradient Generator</title>
-    
-
-
-<link rel="stylesheet" href="style.css">
-  
-
-    <div class="header">
-        <img src="logo.png" alt="Logo" class="logo">
-        <div class="button-row">
-            <button>CV</button>
-            <button>TG</button>
-        </div>
-    </div>
-    
-    
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Страница продукта</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="about">
-Привет! <br>
-Я Артем Никифоров, продуктовый дизайнер
+  <div class="frame1">
+    <!-- Шапка -->
+    <header class="header">
+      <div class="icon">
+        <img src="contents/logo-2 1.svg" alt="Логотип">
+      </div>
+      <nav class="menu">
+        <a href="#">Каталог</a>
+        <a href="#">Доставка</a>
+        <a href="#">Партнерам</a>
+        <a href="#">Блог</a>
+      </nav>
+      <div class="cart">
+        <img src="contents/Frame 2131329951.svg" alt="Корзина">
+      </div>
+    </header>
+
+    <!-- Основной блок с продуктом -->
+    <div class="main_prod">
+      <img src="contents/products main.png" alt="Product Image" class="prod_pic">
+      <h1>С чего начать прикорм</h1>
     </div>
 
-
-    <div class="card-container">
-        
-        <div class="card">
-        
-            <div class="insideCard">
-            <div class="cardPic">picture <br> of <br> project</div>
-            <div class="cardName">Название проекта</div>
-            </div>
-        
-        </div> 
+    <!-- Блок с описанием и карточками -->
+    <div class="prod">
+      <h2>Пюре</h2>
+      <p class="text">Фруктовое пюре «ФрутоНяня» — это вкусный и полезный перекус, который удобно брать с собой, а яркая мягкая упаковка привлечет внимание вашего малыша. Отборные груши обеспечат организм вашего малыша природной пользой и энергией для гармоничного роста!</p>
+      <div class="cards">
+        <!-- Карточка 1 -->
+        <div class="card1">
+          <img src="contents/prod1.png" alt="Card 1 Image" class="card1pic">
+          <button class="button">Кнопка 1</button>
+        </div>
+        <!-- Карточка 2 -->
+        <div class="card2">
+          <img src="contents/prod2.png" alt="Card 2 Image" class="card2pic">
+          <button class="button">Кнопка 2</button>
+        </div>
+        <!-- Карточка 3 -->
+        <div class="card3">
+          <img src="contents/prod3.png" alt="Card 3 Image" class="card3pic">
+          <button class="button">Кнопка 3</button>
+        </div>
+        <!-- Карточка 4 -->
+        <div class="card4">
+          <img src="contents/prod4.png" alt="Card 4 Image" class="card4pic">
+          <button class="button">Кнопка 4</button>
+        </div>
+      </div>
     </div>
 
-
-<div id="3d-container" style="width: 100%; height: 100vh;background-color: white;">
-    </div>
-  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-<!-- Подключите Three.js из CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<!-- Подключите GLTFLoader -->
-<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
-<script src="script.js"></script> 
-
+    <!-- Подвал -->
+    <footer class="footer">
+      <p>ООО ФрутоНяня<br>г. Санкт-Петербург ул. Гастелло дом 20 пом 283Н</p>
+    </footer>
+  </div>
 </body>
 </html>

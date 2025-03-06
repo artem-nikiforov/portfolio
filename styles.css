@@ -1,0 +1,232 @@
+/* Подключение шрифтов */
+@font-face {
+  font-family: "PP Pangram Sans Rounded Bold";
+  src: url("contents/font/PPPangramSansRounded-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "PP Pangram Sans Rounded Medium";
+  src: url("contents/font/PPPangramSansRounded-Medium.otf") format("opentype");
+}
+
+/* Основные стили */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PP Pangram Sans Rounded Medium", sans-serif;
+}
+
+/* Контейнер frame1 */
+.frame1 {
+  display: flex;
+  height: 1500px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+/* Шапка */
+.header {
+  display: flex;
+  height: 57px;
+  padding: 7px 22px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #94CFDD;
+}
+
+.header .icon {
+  display: flex;
+  align-items: center;
+}
+
+.header .menu {
+  display: flex;
+  justify-content: center; /* Пункты меню по центру */
+  align-items: center;
+  flex: 1;
+  gap: 40px; /* Увеличили расстояние между пунктами меню */
+}
+
+.header .menu a {
+  color: #014E72;
+  font-family: "PP Pangram Sans Rounded";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.header .cart {
+  display: flex;
+  align-items: center;
+}
+
+.header .cart img {
+  width: 21.917px;
+  height: 17.077px;
+}
+
+
+/* Основной блок с продуктом */
+.main_prod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0px 65px;
+  margin-top: 150px; /* Отступ от header */
+}
+
+.prod_pic {
+  width: 674px;
+  height: 333px;
+  z-index: 1; /* Изображение ниже текста */
+  margin-top: -90px; /* Увеличили наложение на h1 */
+}
+
+
+h1 {
+  margin:0px;
+  padding-bottom: 50px;
+  color: #03635D;
+  text-align: center;
+  font-family: "PP Pangram Sans Rounded Bold";
+  font-size: 140px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 80%; /* 112px */
+  letter-spacing: -5.6px;
+  z-index: 10; /* Текст выше изображения */
+  position: relative; /* Для корректного наложения */
+}
+
+/* Блок с описанием и карточками */
+.prod {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 65px;
+}
+
+h2 {
+  color: #ED9E1F;
+  font-family: "PP Pangram Sans Rounded Bold";
+  font-size: 130px;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 50px;
+  margin:0px;
+}
+
+.text {
+  color: #0A494A;
+  font-family: "PP Pangram Sans Rounded Medium", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  width: 50%;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+/* Блок с карточками */
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%; 
+  padding-bottom: 100px;
+}
+
+/* Общие стили для карточек */
+.card1, .card2, .card3, .card4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Карточка 1 */
+.card1 {
+  width: 175px;
+  gap: 18px;
+}
+
+.card1pic {
+  height: 330px;
+  align-self: stretch;
+  aspect-ratio: 35/66;
+}
+
+/* Карточка 2 */
+.card2 {
+  width: 178px;
+  gap: 15px;
+}
+
+.card2pic {
+  height: 330px;
+  align-self: stretch;
+  aspect-ratio: 89 / 165;
+}
+
+/* Карточка 3 */
+.card3 {
+  width: 152px;
+}
+
+.card3pic {
+  height: 246px;
+  align-self: stretch;
+}
+
+/* Карточка 4 */
+.card4 {
+  width: 156px;
+}
+
+.card4pic {
+  height: 249px;
+  align-self: stretch;
+  aspect-ratio: 52 / 83;
+}
+
+/* Кнопка */
+.button {
+  display: flex;
+  padding: 6px 22px 3px 22px;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  border-radius: 7px;
+  background: #ED9E1F;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: "PP Pangram Sans Rounded Medium", sans-serif;
+}
+
+/* Подвал */
+.footer {
+  display: flex;
+  margin-left: 50px;
+  height: 93px;
+  padding: 15px 33px;
+  align-items: flex-end;
+  gap: 8px;
+  width: 100%;
+  background: #94CFDD; /* Фон как у header */
+  color: #0A494A;
+  font-family: "PP Pangram Sans Rounded";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 131%;
+}
